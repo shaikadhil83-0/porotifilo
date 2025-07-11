@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #1abc9c;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h1, h2 {
+      margin-bottom: 20px;
+      color: #1abc9c;
+    }
+
+    .project, .skill {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover, .skill:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .btn {
+      background: #1abc9c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background: #159b85;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav a {
+        margin: 10px 0 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <h2>👨‍💻 My Portfolio</h2>
+      <div>
+        <a href="#about">Shaik Adhilbasha</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h1>About Me</h1>
+    <p>Hello! I'm a passionate web developer who loves building interactive websites and apps. I specialize in front-end development with HTML, CSS, JavaScript and frameworks like React.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h1>Skills</h1>
+    <div class="skill">HTML, CSS, JavaScript</div>
+    <div class="skill">React, Node.js</div>
+    <div class="skill">Git, GitHub, REST APIs</div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h1>Projects</h1>
+    <div class="project">
+      <h2>🌐 Portfolio Website</h2>
+      <p>A responsive personal website to showcase my skills and projects.</p>
+    </div>
+    <div class="project">
+      <h2>📊 Weather Dashboard</h2>
+      <p>Built using JavaScript and OpenWeather API with live data and charts.</p>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume">
+    <h1>Resume</h1>
+    <p>You can view or download my resume below:</p>
+    <a href="my resume.pdf.pdf" class="btn" download>Download Resume</a>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h1>Contact Me</h1>
+    <p>Email: youremail@example.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/shaik-aadil-99241b288/" target="_blank">linkedin.com/in/shaik-aadil--99241b288</a></p>
+    <p>GitHub: <a href="https://github.com/shaikadhil83-0" target="_blank">github.com/shaikadhil83-0</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Your Name | Built with ❤️ and Coffee
+  </footer>
+
+</body>
+</html>
